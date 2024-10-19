@@ -172,7 +172,7 @@ sayi=int(input("sayı giriniz:"))
 for i in range(1,sayi+1):
     carpim *=i
 print(sayi,"sayisının faöktöriyeli:",carpim)
-"""
+
 #İç İçe döngüler
 
 sayilar =[1,2,3,4]
@@ -185,30 +185,115 @@ for sayi1 in sayilar:
 #çarpım tablosu ÖÖÖDDDEEEEVVVV
 
 
+for sayi1 in range(1,11):
+    for sayi2 in range(1,11):
+        print(sayi1,'x',sayi2,'=',sayi1*sayi2)
+        
+        
+        
+for i in range(1,11):
+    print("{}'ler".format(i))
+    for j in range(1,11):
+        carpim =i*j
+        print(f"{i} x {j} = {carpim}")
+    print("-"*20)
+        
+
+
+#while dögüsü
+
+a=1 
+while a<10:
+    print("while döngüsü çalışıyor")
+    a+=1
+
+
+for i in range(10):
+    print("for döngüsü çalışıyor")
 
 
 
 
 
+for i in range(1,100):
+    if (i % 2 == 0):
+        print(i)
+
+
+a = 0
+while (a<100):
+    print(a)
+    a+=2
+
+
+a = 1
+while (a<100):
+    if (a% 2== 0):
+        print(a)
+    a+=1 # sonlandırma adımını hangi satıra yazdığımız önemlidir.
+
+
+#break deyimi
+
+i = 1 
+while i<10:
+    print(i)
+    if i == 5:
+        break #♣döngüyü sonlandırmak içinm kullanılır
+    i+=1
+print("*"*20)        
+#continue deyimi
+
+i = 1
+while (i<10):
+    i+=1
+    if i == 5:
+        continue#sonraki satırlar çalıştırılmayacak ve döngü başa dönecektir
+    print(i)
+
+
+toplam = 0
+for i in range(1,11):
+    if i % 2 == 0:
+        continue #çift sayı olduğunda döngü başa döner
+    toplam +=i #tek sayıları toplar
+print(toplam)
+
+
+toplam = 0
+for i in range(1,11):
+    if i % 2 == 0:
+        break # çif sayı olduğunda döngü durdurulur
+    toplam +=i 
+print(toplam)
 
 
 
+a = 0
+toplam = 0
+while (a<=10):
+    a+=1 # a=a+1
+    if (a % 2 == 0):
+        toplam+=a
+print(toplam)
+    
 
 
+i=1 
+while i<6:
+    print(i)
+    i+=1 
+else:
+    print("Artık i sayısı 6'dam küçük değil")
 
 
+for i in range(6):
+    print(i)
+else:
+    print("Artık i değeriği 6 da küçük değil")
 
 
-
-
-
-
-
-
-
-
-
-
+"""
 
 
 

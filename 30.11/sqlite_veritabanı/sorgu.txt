@@ -1,0 +1,6 @@
+SELECT * FROM ogrenciler WHERE isim='Kaan';
+select * from ogrenciler WHERE isim like 'A%';
+select * from ogrenciler WHERE isim like '%a';
+select * from ogrenciler WHERE isim like '_a%';
+select * from ogrenciler WHERE isim like '[ABC]%';
+select * from ogrenciler WHERE not_ortalamasi>90;
